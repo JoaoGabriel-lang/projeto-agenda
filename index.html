@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda</title>
+</head>
+
+<body>
+
+    <main class="agenda">
+        <header class="cabecalho">
+            <h1>Quarta-feira</h1>
+            <div class="controle-dia">
+                <button class="btn-dia-anterior"
+                >←
+
+                </button>
+                <button class="btn-escolher-dia">
+                    ...
+
+                </button>
+                <button class="btn-dia-posterior">
+                    →
+
+                </button>
+            </div>
+
+            <div class="menu-dias">
+
+                <button type="button" class="btn-dia" data-dia="0">Domingo</button>
+                <button type="button" class="btn-dia" data-dia="1">Segunda</button>
+                <button type="button" class="btn-dia" data-dia="2">Terça</button>
+                <button type="button" class="btn-dia" data-dia="3">Quarta</button>
+                <button type="button" class="btn-dia" data-dia="4">Quinta</button>
+                <button type="button" class="btn-dia" data-dia="5">Sexta</button>
+                <button type="button" class="btn-dia" data-dia="6">Sábado</button>
+
+            </div>
+
+            <div class="acoes-selecao">
+                <button class="btn-excluir-selecionadas">🗑️</button>
+                <span class="quantidade-selecionadas">0</span>
+            </div>
+        </header>
+        <section class="tarefas">
+            
+        </section>
+        
+        <button class="btn-adicionar-tarefa">
+            +
+
+        </button>
+        <div class="modal">
+            <div class="barra-modal"></div>
+            <h2>
+                Nova Tarefa
+
+            </h2>
+            <form>
+                
+                <label for="titulo-tarefa">
+                    Título da tarefa
+
+                </label>
+                <input type="text" id="titulo-tarefa" placeholder="Digite a tarefa">
+                <label for="hora-inicio">
+                    Horário de inicio
+
+                </label>
+                <input type="time" id="hora-inicio"> 
+                <label for="horario-termino">
+                    Horario de término
+
+                </label>
+                <input type="time" id="hora-termino">
+              <div class="botoes-modal">
+                <button type="button" class="btn-cancelar">
+                    Cancelar
+                </button>
+                <button type="button" class="btn-salvar">
+                    Salvar
+                </button>
+              </div>
+            </form>
+        </div>
+
+        <div class="modal-editar">
+            <h2>Editar Tarefa</h2>
+
+            <form>
+<label for="titulo-editar">Editar título</label> 
+                <input type="text" id="titulo-editar">
+
+                <label for="inicio-editar">Editar horário de início</label>
+                <input type="time" id="inicio-editar">
+
+                <label for="termino-editar">Editar horário de término</label>
+                <input type="time" id="termino-editar">
+
+                <button type="button" class="btn-cancelar-edicao">
+                    Cancelar
+                </button>
+                <button type="button" class="btn-salvar-edicao">
+                    Salvar
+                </button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
