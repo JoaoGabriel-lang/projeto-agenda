@@ -1,4 +1,4 @@
-# AGENTS.md — Agenda Namorada
+# AGENTS.md — Projeto Agenda
 
 > Memória de contexto do projeto. Leia antes de qualquer alteração.
 
@@ -6,7 +6,7 @@
 Agenda semanal de tarefas, mobile-first, 100% front-end, em página única.
 Cada tarefa pertence a um DIA DA SEMANA (não a uma data). Funciona como
 template semanal recorrente.
-Pasta: "Agenda Namorada" — projeto pessoal, provavelmente de uso individual.
+Pasta: "Projeto Agenda" — projeto pessoal, provavelmente de uso individual.
 
 ## 2. Stack
 - HTML5 + CSS3 + JavaScript vanilla (ES6)
@@ -81,7 +81,7 @@ Não há framework, store nem reatividade.
 - Extrair resetSelecao() (bloco repetido ~6x)
 - Separar render de lógica; usar delegação de eventos em .tarefas
 - Adicionar id às tarefas
-- Usar nomes de chave mais específicos (ex.: agenda-namorada:tarefas)
+- Usar nomes de chave mais específicos (ex.: agenda-:tarefas)
 - Forms sem submit -> Enter não salva; sem required
 - Sem overlay nos modais, sem ESC, sem focus trap, sem aria-label
 - alert/confirm bloqueantes
